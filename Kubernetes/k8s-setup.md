@@ -55,6 +55,14 @@
 1. Validate your cluster 
      ```sh 
       kops validate cluster
+      Suggestions:
+ * validate cluster: kops validate cluster
+ * list nodes: kubectl get nodes --show-labels
+ * ssh to the master: ssh -i ~/.ssh/id_rsa admin@api.dev.k8s.pks.in
+ * the admin user is specific to Debian. If not using Debian please use the appropriate user based on your OS.
+ * read about installing addons at: https://github.com/kubernetes/kops/blob/master/docs/operations/addons.md.
+
+
     ```
 
 1. To list nodes
